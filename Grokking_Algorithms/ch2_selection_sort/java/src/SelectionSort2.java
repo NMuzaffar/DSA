@@ -1,5 +1,3 @@
-package main.ch2_selection_sort;
-
 import java.util.Arrays;
 
 // Use raw arrays instead of ArrayList

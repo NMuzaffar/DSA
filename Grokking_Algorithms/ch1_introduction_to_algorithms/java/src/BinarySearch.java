@@ -1,5 +1,3 @@
-package main.ch1_introduction_to_algorithms;
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.IntStream;
