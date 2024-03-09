@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.IntStream;
 
-public interface BinarySearch {
+public class BinarySearch {
     public static void main(String[] args) {
         System.out.println(binarySearch(IntStream.rangeClosed(1, 100).boxed().toList(), 57)); // => 56
         System.out.println(binarySearch(new ArrayList<>(List.of(1, 3, 5, 7, 9)), 3)); // => 1
