@@ -2,8 +2,6 @@ package LeetCode.easy;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-import java.util.Arrays;
-
 /**
  * <a href="https://leetcode.com/problems/squares-of-a-sorted-array/">Squares of a Sorted Array</a>
  */
@@ -15,17 +13,40 @@ public class Problem977 {
   }
 
   /**
-   * Approach: Sort
-   * Time complexity: O(n log(n))
-   * Space complexity: O(log n) -> Quicksort Algorithm in Java
+   * Approach: Two Pointers
+   * Time complexity: O(n)
+   * Space complexity: O(n)
    */
   public static int[] sortedSquares(int[] nums) {
-    int n = nums.length;
-    int[] ans = new int[n];
-    for (int i = 0; i < n; i++) {
-      ans[i] = (int) Math.pow(nums[i], 2);
-    }
-    Arrays.sort(ans);
-    return ans;
+   int n = nums.length;
+   int[] ans = new int[n];
+   int left = 0;
+   int right = n - 1;
+
+   for (int i = n - 1; i >= 0; i--) {
+     int num;
+     if (Math.abs(nums[right]) > Math.abs(nums[left])) {
+       num = nums[right--];
+     } else {
+       num = nums[left++];
+     }
+     ans[i] = (int) Math.pow(num, 2);
+   }
+   return ans;
   }
+
+//  /**
+//   * Approach: Sort
+//   * Time complexity: O(n log(n))
+//   * Space complexity: O(log n) -> Quicksort Algorithm in Java
+//   */
+//  public static int[] sortedSquares(int[] nums) {
+//    int n = nums.length;
+//    int[] ans = new int[n];
+//    for (int i = 0; i < n; i++) {
+//      ans[i] = (int) Math.pow(nums[i], 2);
+//    }
+//    Arrays.sort(ans);
+//    return ans;
+//  }
 }
