@@ -2,8 +2,10 @@ package LeetCode.easy;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+import java.util.Arrays;
+
 /**
- * <a href="https://leetcode.com/problems/squares-of-a-sorted-array/">Squares of a Sorted Array</a>
+ * <a href="https://leetcode.com/problems/squares-of-a-sorted-array/">977. Squares of a Sorted Array</a>
  */
 public class Problem977 {
 
@@ -13,40 +15,40 @@ public class Problem977 {
   }
 
   /**
-   * Approach: Two Pointers
-   * Time complexity: O(n)
-   * Space complexity: O(n)
+   * Approach: Two Pointers <br>
+   * Time complexity: O(n) <br>
+   * Space complexity: O(n) <br>
    */
   public static int[] sortedSquares(int[] nums) {
    int n = nums.length;
-   int[] ans = new int[n];
+   int[] result = new int[n];
    int left = 0;
    int right = n - 1;
 
    for (int i = n - 1; i >= 0; i--) {
-     int num;
-     if (Math.abs(nums[right]) > Math.abs(nums[left])) {
-       num = nums[right--];
+     final int square;
+     if (Math.abs(nums[left]) < Math.abs(nums[right])) {
+       square = nums[right--];
      } else {
-       num = nums[left++];
+       square = nums[left++];
      }
-     ans[i] = (int) Math.pow(num, 2);
+     result[i] = square * square;
    }
-   return ans;
+   return result;
   }
 
 //  /**
-//   * Approach: Sort
-//   * Time complexity: O(n log(n))
-//   * Space complexity: O(log n) -> Quicksort Algorithm in Java
+//   * Approach: Sort <br>
+//   * Time complexity: O(n log(n)) <br>
+//   * Space complexity: O(log n) -> Quicksort Algorithm in Java <br>
 //   */
 //  public static int[] sortedSquares(int[] nums) {
 //    int n = nums.length;
-//    int[] ans = new int[n];
+//    int[] result = new int[n];
 //    for (int i = 0; i < n; i++) {
-//      ans[i] = (int) Math.pow(nums[i], 2);
+//      result[i] = (int) Math.pow(nums[i], 2);
 //    }
-//    Arrays.sort(ans);
-//    return ans;
+//    Arrays.sort(result);
+//    return result;
 //  }
 }

@@ -3,9 +3,9 @@ package LeetCode.easy;
 import static org.junit.jupiter.api.Assertions.*;
 
 /**
- * <a href="https://leetcode.com/problems/reverse-string/">344. Reverse String</a>
+ * <a href="https://leetcode.com/problems/running-sum-of-1d-array/">1480. Running Sum of 1d Array</a>
  */
-public class Problem344 {
+public class Problem1480 {
 
   public static void main(String[] args) {
     char[] s1 = "hello".toCharArray();
