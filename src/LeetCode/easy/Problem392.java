@@ -14,8 +14,8 @@ public class Problem392 {
 
   /**
    * Approach: Two Pointers <br>
-   * Time complexity: O(|T|) <-> |T| is the length of the target string <br>
-   * Space complexity: O(1) <br>
+   * Time Complexity: O(|T|) <-> |T| is the length of the target string <br>
+   * Space Complexity: O(1) <br>
    */
   public static boolean isSubsequence(String s, String t) {
     if (s.isEmpty()) return true; // An empty string is always a subsequence

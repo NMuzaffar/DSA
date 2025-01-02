@@ -5,7 +5,7 @@
 ///**
 // * <a href="https://leetcode.com/problems/running-sum-of-1d-array/">1480. Running Sum of 1d Array</a>
 // */
-//public class Problem1480 {
+//public class Problem1413 {
 //
 //  public static void main(String[] args) {
 //    assertArrayEquals(new int[]{1,3,6,10}, runningSum(new int[]{1,2,3,4}));

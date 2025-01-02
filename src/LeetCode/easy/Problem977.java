@@ -16,8 +16,8 @@ public class Problem977 {
 
   /**
    * Approach: Two Pointers <br>
-   * Time complexity: O(n) <br>
-   * Space complexity: O(n) <br>
+   * Time Complexity: O(n) <br>
+   * Space Complexity: O(n) <br>
    */
   public static int[] sortedSquares(int[] nums) {
    int n = nums.length;
@@ -28,9 +28,11 @@ public class Problem977 {
    for (int i = n - 1; i >= 0; i--) {
      final int square;
      if (Math.abs(nums[left]) < Math.abs(nums[right])) {
-       square = nums[right--];
+       square = nums[right];
+       right--;
      } else {
-       square = nums[left++];
+       square = nums[left];
+       left++;
      }
      result[i] = square * square;
    }
@@ -39,14 +41,14 @@ public class Problem977 {
 
 //  /**
 //   * Approach: Sort <br>
-//   * Time complexity: O(n log(n)) <br>
-//   * Space complexity: O(log n) -> Quicksort Algorithm in Java <br>
+//   * Time Complexity: O(n log(n)) <br>
+//   * Space Complexity: O(log n) -> Quicksort Algorithm in Java <br>
 //   */
 //  public static int[] sortedSquares(int[] nums) {
 //    int n = nums.length;
 //    int[] result = new int[n];
 //    for (int i = 0; i < n; i++) {
-//      result[i] = (int) Math.pow(nums[i], 2);
+//      result[i] = nums[i] * nums[i];
 //    }
 //    Arrays.sort(result);
 //    return result;
