@@ -13,27 +13,26 @@ public class Problem2270 {
   }
 
   /**
-   * Approach: Prefix Sum (with the improved space complexity) <br>
+   * Approach: Optimized Prefix and Suffix Sums <br>
    * Time Complexity: O(n) <br>
    * Space Complexity: O(1) <br>
    */
   public static int waysToSplitArray(int[] nums) {
-    int validSplits = 0;
     long total = 0L;
-    long leftSection = 0L;
-
-    for (int i = 0; i < nums.length; i++) {
-      total += nums[i];
+    for (int num : nums) {
+      total += num;
     }
 
+    int answer = 0;
+    long leftSection = 0L;
     for (int i = 0; i < nums.length - 1; i++) {
       leftSection += nums[i];
       long rightSection = total - leftSection;
       if (leftSection >= rightSection) {
-        validSplits++;
+        answer++;
       }
     }
-    return validSplits;
+    return answer;
   }
 
 //  /**
@@ -50,39 +49,38 @@ public class Problem2270 {
 //      prefix[i] = prefix[i - 1] + nums[i];
 //    }
 //
-//    int validSplits = 0;
+//    int answer = 0;
 //    for (int i = 0; i < n - 1; i++) {
 //      long leftSection = prefix[i];
-//      long rightSection = prefix[n - 1] - leftSection;
+//      long rightSection = prefix[n - 1] - prefix[i];
 //      if (leftSection >= rightSection) {
-//        validSplits++;
+//        answer++;
 //      }
 //    }
-//    return validSplits;
+//    return answer;
 //  }
-
+//
 //  /**
 //   * Approach: Brute Force -> Time Limit Exceeded <br>
 //   * Time Complexity: O(n^2) <br>
 //   * Space Complexity: O(1) <br>
 //   */
 //  public static int waysToSplitArray(int[] nums) {
-//    int validSplits = 0;
-//    for (int i = 0; i < nums.length - 1; i++) {
+//    int n = nums.length;
+//    int answer = 0;
+//    for (int i = 0; i < n - 1; i++) {
 //      long leftSection = 0L;
-//      for (int j = 0; j <= i; j++) {
-//        leftSection += nums[j];
+//      for (int x = 0; x <= i; x++) {
+//        leftSection += nums[x];
 //      }
-//
 //      long rightSection = 0L;
-//      for (int j = i + 1; j < nums.length; j++) {
-//        rightSection += nums[j];
+//      for (int y = i + 1; y < n; y++) {
+//        rightSection += nums[y];
 //      }
-//
-//      if ((leftSection >= rightSection)) {
-//        validSplits++;
+//      if (leftSection >= rightSection) {
+//        answer++;
 //      }
 //    }
-//    return validSplits;
+//    return answer;
 //  }
 }

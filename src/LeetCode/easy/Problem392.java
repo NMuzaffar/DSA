@@ -18,8 +18,11 @@ public class Problem392 {
    * Space Complexity: O(1) <br>
    */
   public static boolean isSubsequence(String s, String t) {
-    if (s.isEmpty()) return true; // An empty string is always a subsequence
-    if (s.length() > t.length()) return false; // S cannot be a subsequence of T if S is longer
+    if (s.isEmpty())
+      return true; // An empty string is always a subsequence
+
+    if (s.length() > t.length())
+      return false; // S cannot be a subsequence of T if S is longer
 
     int i = 0;
     int j = 0;

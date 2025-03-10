@@ -33,7 +33,7 @@ public class Problem344 {
   }
 
 //  /**
-//   * Approach: Recursion, In-Place <br>
+//   * Approach: Recursion (In-Place) <br>
 //   * Time Complexity: O(n) <br>
 //   * Space Complexity: O(n) <-> Recursion Stack <br>
 //   */

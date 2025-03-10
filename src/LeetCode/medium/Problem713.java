@@ -12,7 +12,7 @@ public class Problem713 {
     assertEquals(0, numSubarrayProductLessThanK(new int[]{1,2,3}, 0));
   }
 
-    /**
+  /**
    * Approach: Sliding Window <br>
    * Time Complexity: O(n) <br>
    * Space Complexity: O(1) <br>
@@ -21,20 +21,15 @@ public class Problem713 {
     if (k <= 1) {
       return 0; // Handle edge cases where K is 0 or 1 (no sub-arrays possible)
     }
-
-    int result = 0;
-    int left = 0;
-    int curr = 1;
-
-    for (int right = 0; right < nums.length; right++) {
-      curr *= nums[right];
-      while (curr >= k) {
-        curr /= nums[left];
-        left++;
+    int answer = 0;
+    int product = 1;
+    for (int left = 0, right = 0; right < nums.length; right++) {
+      product *= nums[right];
+      while (product >= k) {
+        product /= nums[left++];
       }
-      result += right - left + 1;
+      answer += right - left + 1;
     }
-
-    return result;
+    return answer;
   }
 }
