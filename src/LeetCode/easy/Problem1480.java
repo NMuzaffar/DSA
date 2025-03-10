@@ -8,9 +8,9 @@ import static org.junit.jupiter.api.Assertions.*;
 public class Problem1480 {
 
   public static void main(String[] args) {
-    assertArrayEquals(new int[] {1, 3, 6, 10}, runningSum(new int[] {1, 2, 3, 4}));
-    assertArrayEquals(new int[] {1, 2, 3, 4, 5}, runningSum(new int[] {1, 1, 1, 1, 1}));
-    assertArrayEquals(new int[] {3, 4, 6, 16, 17}, runningSum(new int[] {3, 1, 2, 10, 1}));
+    assertArrayEquals(new int[] {1,3,6,10}, runningSum(new int[] {1,2,3,4}));
+    assertArrayEquals(new int[] {1,2,3,4,5}, runningSum(new int[] {1,1,1,1,1}));
+    assertArrayEquals(new int[] {3,4,6,16,17}, runningSum(new int[] {3,1,2,10,1}));
   }
 
   /**
@@ -19,7 +19,7 @@ public class Problem1480 {
    * Space Complexity: O(1) <br>
    */
   public static int[] runningSum(int[] nums) {
-    for(int i = 1; i < nums.length; i++) {
+    for (int i = 1; i < nums.length; i++) {
       nums[i] += nums[i - 1];
     }
     return nums;
