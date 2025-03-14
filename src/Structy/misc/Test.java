@@ -1,4 +1,4 @@
-package Structy.ch1_arrays_and_strings;
+package Structy.misc;
 
 import static org.junit.jupiter.api.Assertions.*;
 

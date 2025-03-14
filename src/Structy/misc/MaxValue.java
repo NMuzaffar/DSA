@@ -1,4 +1,4 @@
-package Structy.ch0_introduction;
+package Structy.misc;
 
 import static org.junit.jupiter.api.Assertions.*;
 
