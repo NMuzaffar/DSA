@@ -8,8 +8,8 @@ import static org.junit.jupiter.api.Assertions.*;
 public class Problem2270 {
 
   public static void main(String[] args) {
-    assertEquals(2, waysToSplitArray(new int[]{10,4,-8,7}));
-    assertEquals(2, waysToSplitArray(new int[]{2,3,1,0}));
+    assertEquals(2, waysToSplitArray(new int[] {10,4,-8,7}));
+    assertEquals(2, waysToSplitArray(new int[] {2,3,1,0}));
   }
 
   /**
