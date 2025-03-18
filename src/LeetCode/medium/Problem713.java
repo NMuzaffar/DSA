@@ -8,8 +8,8 @@ import static org.junit.jupiter.api.Assertions.*;
 public class Problem713 {
 
   public static void main(String[] args) {
-    assertEquals(8, numSubarrayProductLessThanK(new int[]{10,5,2,6}, 100));
-    assertEquals(0, numSubarrayProductLessThanK(new int[]{1,2,3}, 0));
+    assertEquals(8, numSubarrayProductLessThanK(new int[] {10,5,2,6}, 100));
+    assertEquals(0, numSubarrayProductLessThanK(new int[] {1,2,3}, 0));
   }
 
   /**
