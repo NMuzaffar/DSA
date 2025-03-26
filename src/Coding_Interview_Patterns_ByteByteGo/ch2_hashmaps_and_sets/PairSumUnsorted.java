@@ -1,4 +1,4 @@
-package CodingInterviewPatterns_ByteByteGo.ch2_hashmaps_and_sets;
+package Coding_Interview_Patterns_ByteByteGo.ch2_hashmaps_and_sets;
 
 import java.util.HashMap;
 import java.util.Map;

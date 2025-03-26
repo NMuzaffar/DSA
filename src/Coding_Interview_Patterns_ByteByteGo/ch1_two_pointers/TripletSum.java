@@ -1,4 +1,4 @@
-package CodingInterviewPatterns_ByteByteGo.ch1_two_pointers;
+package Coding_Interview_Patterns_ByteByteGo.ch1_two_pointers;
 
 import java.util.*;
 
