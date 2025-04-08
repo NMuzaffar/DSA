@@ -16,7 +16,7 @@ public class Problem1426 {
   }
 
   /**
-   * Approach: HashSet </><br>
+   * Approach: Hash Set <br>
    * Time Complexity: O(n) <br>
    * Space Complexity: O(n) <br>
    */
