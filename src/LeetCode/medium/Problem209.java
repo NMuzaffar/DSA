@@ -22,8 +22,7 @@ public class Problem209 {
     int answer = Integer.MAX_VALUE;
 
     int currWindowSum = 0;
-    int left = 0;
-    for (int right = 0; right < nums.length; right++) {
+    for (int left = 0, right = 0; right < nums.length; right++) {
       currWindowSum += nums[right];
       while (currWindowSum >= target) {
         answer = Math.min(answer, right - left + 1);
