@@ -22,7 +22,7 @@ public class Problem303 {
 
   /**
    * Approach: Prefix Sum <br>
-   * Time Complexity: O(n + q) <br>
+   * Time Complexity: NumArray() -> O(N). sumRange() -> O(1) <br>
    * Space Complexity: O(n) <br>
    */
   static class NumArray {
@@ -43,7 +43,7 @@ public class Problem303 {
 
 //  /**
 //   * Approach: Brute Force -> Time Limit Exceeded <br>
-//   * Time Complexity: O(n * q) <br>
+//   * Time Complexity: NumArray() -> O(N). sumRange() -> O(N) <br>
 //   * Space Complexity: O(1) <br>
 //   */
 //  static class NumArray {
