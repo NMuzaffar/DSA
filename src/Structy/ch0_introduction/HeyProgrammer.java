@@ -1,8 +1,8 @@
-package Structy.misc;
+package Structy.ch0_introduction;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-public class Greet {
+public class HeyProgrammer {
 
   public static void main(String[] args) {
     assertEquals("hey alvin", greet("alvin"));
@@ -11,8 +11,8 @@ public class Greet {
   }
 
   /**
-   * Time Complexity: O(1) <br>
-   * Space Complexity: O(1) <br>
+   * Time Complexity: O(n) <br>
+   * Space Complexity: O(n) <br>
    */
   public static String greet(String s) {
     return "hey " + s;
