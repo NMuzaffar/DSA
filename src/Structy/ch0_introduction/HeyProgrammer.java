@@ -2,6 +2,9 @@ package Structy.ch0_introduction;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+/**
+ * <a href="https://structy.net/problems/hey-programmer">Hey Programmer</a>
+ */
 public class HeyProgrammer {
 
   public static void main(String[] args) {
