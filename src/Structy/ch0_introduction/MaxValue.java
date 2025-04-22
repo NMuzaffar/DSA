@@ -1,7 +1,10 @@
-package Structy.misc;
+package Structy.ch0_introduction;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+/**
+ * <a href="https://structy.net/problems/max-value">Max Value</a>
+ */
 public class MaxValue {
 
   public static void main(String[] args) {
