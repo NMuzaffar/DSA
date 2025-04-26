@@ -14,6 +14,7 @@ public class Problem560 {
     assertEquals(2, subarraySum(new int[] {1,1,1}, 2));
     assertEquals(2, subarraySum(new int[] {1,2,3}, 3));
     assertEquals(1, subarraySum(new int[] {0,1,2,3,4}, 5));
+    assertEquals(4, subarraySum(new int[] {1,2,1,2,1}, 3));
   }
 
   /**
@@ -73,7 +74,6 @@ public class Problem560 {
 //        int subarrSum = prefix[end] - prefix[start] + nums[start];
 //        if (subarrSum == k) {
 //          answer++;
-//
 //        }
 //      }
 //    }
