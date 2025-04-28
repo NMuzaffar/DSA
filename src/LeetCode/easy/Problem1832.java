@@ -29,7 +29,7 @@ public class Problem1832 {
   }
 
 //  /**
-//   * Approach: Use Array as Counter <br>
+//   * Approach: Array Counter <br>
 //   * Time Complexity: O(n) <br>
 //   * Space Complexity: O(1) <br>
 //   */
