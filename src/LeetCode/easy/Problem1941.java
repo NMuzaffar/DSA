@@ -17,7 +17,7 @@ public class Problem1941 {
   /**
    * Approach: Hash Map <br>
    * Time Complexity: O(n) <br>
-   * Space Complexity:  O(1) (OR O(k), k <-> the number of characters that could be in the input) <br>
+   * Space Complexity: O(K) <-> K is the number of characters that could be in the input <br>
    */
   public static boolean areOccurrencesEqual(String s) {
     Map<Character, Integer> counts = new HashMap<>();
