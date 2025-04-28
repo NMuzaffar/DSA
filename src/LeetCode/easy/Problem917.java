@@ -1,8 +1,8 @@
 package LeetCode.easy;
 
-import java.util.Stack;
-
 import static org.junit.jupiter.api.Assertions.*;
+
+import java.util.Stack;
 
 /**
  * <a href="https://leetcode.com/problems/reverse-only-letters/">917. Reverse Only Letters</a>
