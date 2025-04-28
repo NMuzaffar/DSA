@@ -1,9 +1,9 @@
 package LeetCode.easy;
 
+import static org.junit.jupiter.api.Assertions.*;
+
 import java.util.HashSet;
 import java.util.Set;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 /**
  * <a href="https://leetcode.com/problems/counting-elements/">1426. Counting Elements</a>
