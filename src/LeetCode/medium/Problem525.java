@@ -21,7 +21,7 @@ public class Problem525 {
   /**
    * Approach: Hash Map <br>
    * Time Complexity: O(n) <br>
-   * Space Complexity: O(1) <br>
+   * Space Complexity: O(n) <br>
    */
   public static int findMaxLength(int[] nums) {
     Map<Integer, Integer> numsIndexMap = new HashMap<>();
