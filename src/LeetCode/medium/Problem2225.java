@@ -24,7 +24,7 @@ public class Problem2225 {
   }
 
   /**
-   * Approach: Counting with Array <br>
+   * Approach: Array Counter <br>
    * Time Complexity: O(n + K) <-> K is the range of values in winner & loser <br>
    * Space Complexity: O(K) <br>
    */
@@ -56,7 +56,7 @@ public class Problem2225 {
 
 //  /**
 //   * Approach: Hash Map <br>
-//   * Time Complexity: O(n log(n)) <br>
+//   * Time Complexity: O(n * log(n)) <br>
 //   * Space Complexity: O(n) <br>
 //   */
 //  public static List<List<Integer>> findWinners(int[][] matches) {
@@ -82,7 +82,7 @@ public class Problem2225 {
 //
 //  /**
 //   * Approach: Hash Set + Hash Map <br>
-//   * Time Complexity: O(n log(n)) <br>
+//   * Time Complexity: O(n * log(n)) <br>
 //   * Space Complexity: O(n) <br>
 //   */
 //  public static List<List<Integer>> findWinners(int[][] matches) {
@@ -110,7 +110,7 @@ public class Problem2225 {
 //
 //  /**
 //   * Approach: Hash Set <br>
-//   * Time Complexity: O(n log(n)) <br>
+//   * Time Complexity: O(n * log(n)) <br>
 //   * Space Complexity: O(n) <br>
 //   */
 //  public static List<List<Integer>> findWinners(int[][] matches) {
