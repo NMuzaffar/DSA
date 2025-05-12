@@ -1,4 +1,4 @@
-package Structy.ch0_introduction;
+package Structy.ch0_Introduction;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -24,9 +24,7 @@ public class MaxValue {
   public static double maxValue(double[] numbers) {
     double max = Double.NEGATIVE_INFINITY;
     for (double num : numbers) {
-      if (num > max) {
-        max = num;
-      }
+      max = Math.max(max, num);
     }
     return max;
   }
