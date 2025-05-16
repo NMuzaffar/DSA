@@ -29,7 +29,7 @@ public class PairSumSorted {
   }
 
   private static void assertValidOutputs(Set<Set<Integer>> validResults, List<Integer> result) {
-    assertTrue(validResults.contains(new HashSet<>(result)), "Result: " + result + " is not a valid combination");
+    assertTrue(validResults.contains(new HashSet<>(result)), "Result: " + result + " is not a valid combination in: " + validResults);
   }
 
   /**
