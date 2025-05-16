@@ -1,5 +1,11 @@
 from typing import List
 
+
+'''
+Approach: Brute Force
+Time Complexity: O(n^2)
+Space Complexity: O(1)
+'''
 def pair_sum_sorted_brute_force(nums: List[int], target: int) -> List[int]:
     n = len(nums)
     for i in range(n):
@@ -8,6 +14,12 @@ def pair_sum_sorted_brute_force(nums: List[int], target: int) -> List[int]:
                 return [i, j]
     return []
 
+
+'''
+Approach: Two Pointers
+Time Complexity: O(n)
+Space Complexity: O(1)
+'''
 def pair_sum_sorted(nums: List[int], target: int) -> List[int]:
     left = 0
     right = len(nums) - 1
