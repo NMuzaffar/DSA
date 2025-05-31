@@ -3,7 +3,7 @@ package Coding_Interview_Patterns_ByteByteGo.ch1_Two_Pointers;
 import static org.junit.jupiter.api.Assertions.*;
 
 /**
- * <a href="https://bytebytego.com/exercises/coding-patterns/two-pointers/largest-container">Is Palindrome Valid</a>
+ * <a href="https://bytebytego.com/exercises/coding-patterns/two-pointers/is-palindrome-valid">Is Palindrome Valid</a>
  */
 public class IsPalindromeValid {
 
