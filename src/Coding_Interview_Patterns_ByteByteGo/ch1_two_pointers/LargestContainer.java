@@ -41,20 +41,20 @@ public class LargestContainer {
     return maxWater;
   }
 
-  /**
-   * Approach: Brute Force <br>
-   * Time Complexity: O(n^2) <br>
-   * Space Complexity: O(1) <br>
-   */
-  public static int largestContainer1(int[] heights) {
-    int maxWater = 0;
-    int n = heights.length;
-    for (int i = 0; i < n; i++) {
-      for (int j = i + 1; j < n; j++) {
-        int water = Math.min(heights[i], heights[j]) * (j - i);
-        maxWater = Math.max(maxWater, water);
-      }
-    }
-    return maxWater;
-  }
+//  /**
+//   * Approach: Brute Force <br>
+//   * Time Complexity: O(n^2) <br>
+//   * Space Complexity: O(1) <br>
+//   */
+//  public static int largestContainer(int[] heights) {
+//    int maxWater = 0;
+//    int n = heights.length;
+//    for (int i = 0; i < n; i++) {
+//      for (int j = i + 1; j < n; j++) {
+//        int water = Math.min(heights[i], heights[j]) * (j - i);
+//        maxWater = Math.max(maxWater, water);
+//      }
+//    }
+//    return maxWater;
+//  }
 }
