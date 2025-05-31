@@ -2,7 +2,7 @@ from typing import List
 
 
 '''
-Approach: (Inward Traversal)
+Approach: Two Pointers (Inward Traversal)
 Time Complexity: O(n^2)
 Space Complexity: O(n) without output array (OR O(n^2) with output array)
 '''
