@@ -33,7 +33,7 @@ public class PairSumSorted {
   }
 
   /**
-   * Approach: Two Pointers <br>
+   * Approach: Two Pointers (Inward Traversal) <br>
    * Time Complexity: O(n) <br>
    * Space Complexity: O(1) <br>
    */
