@@ -1,4 +1,4 @@
-package Coding_Interview_Patterns_ByteByteGo.ch1_Two_Pointers;
+package Coding_Interview_Patterns_ByteByteGo.ch1_two_pointers;
 
 import static org.junit.jupiter.api.Assertions.*;
 
