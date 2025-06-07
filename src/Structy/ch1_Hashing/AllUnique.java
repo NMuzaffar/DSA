@@ -5,7 +5,7 @@ import static org.junit.jupiter.api.Assertions.*;
 import java.util.*;
 
 /**
- * <a href="https://structy.net/problems/premium/all-unique">AllUnique</a>
+ * <a href="https://structy.net/problems/premium/all-unique">All Unique</a>
  */
 public class AllUnique {
 
