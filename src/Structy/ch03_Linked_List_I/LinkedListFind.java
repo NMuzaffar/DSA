@@ -1,4 +1,4 @@
-package Structy.ch3_Linked_List_I;
+package Structy.ch03_Linked_List_I;
 
 import static org.junit.jupiter.api.Assertions.*;
 

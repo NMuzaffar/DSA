@@ -1,4 +1,4 @@
-package Structy.ch1_Hashing;
+package Structy.ch01_Hashing;
 
 import static org.junit.jupiter.api.Assertions.*;
 
