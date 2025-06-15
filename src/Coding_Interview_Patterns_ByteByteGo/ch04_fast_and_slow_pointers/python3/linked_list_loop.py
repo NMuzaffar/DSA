@@ -10,7 +10,7 @@ class ListNode:
 
 
 '''
-Approach: Approach: Floyd's Cycle Detection (Fast & Slow Pointers)
+Approach: Floyd's Cycle Detection (Fast & Slow Pointers)
 Time Complexity: O(n)
 Space Complexity: O(1)
 '''
