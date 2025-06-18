@@ -22,7 +22,7 @@ public class PalindromeRecursive {
    * Space Complexity: O(n^2) <br>
    */
   public static boolean palindrome(String s) {
-    if (s.isEmpty() || s.length() == 1) {
+    if (s.length() <= 1) {
       return true;
     }
     if (s.charAt(0) != s.charAt(s.length() - 1)) {
