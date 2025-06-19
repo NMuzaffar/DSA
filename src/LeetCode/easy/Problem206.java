@@ -35,7 +35,7 @@ public class Problem206 {
 //   * Time Complexity: O(n) <br>
 //   * Space Complexity: O(n) <br>
 //   */
-//  public static ListNode reverseList1(ListNode head) {
+//  public static ListNode reverseList(ListNode head) {
 //    return reverseListTailRecursive(head, null);
 //  }
 //
