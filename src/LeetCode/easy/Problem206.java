@@ -24,10 +24,10 @@ public class Problem206 {
     if (head == null || head.next == null) {
       return head;
     }
-    ListNode reversedSubList = reverseList(head.next);
+    ListNode newHead = reverseList(head.next);
     head.next.next = head;
     head.next = null;
-    return reversedSubList;
+    return newHead;
   }
 
 //  /**
@@ -35,17 +35,17 @@ public class Problem206 {
 //   * Time Complexity: O(n) <br>
 //   * Space Complexity: O(n) <br>
 //   */
-//  public static ListNode reverseList(ListNode head) {
+//  public static ListNode reverseList1(ListNode head) {
 //    return reverseListTailRecursive(head, null);
 //  }
 //
-//  private static ListNode reverseListTailRecursive(ListNode currNode, ListNode prevNode) {
-//    if (currNode == null) {
-//      return prevNode;
+//  private static ListNode reverseListTailRecursive(ListNode curr, ListNode prev) {
+//    if (curr == null) {
+//      return prev;
 //    }
-//    ListNode nextNode = currNode.next;
-//    currNode.next = prevNode;
-//    return reverseListTailRecursive(nextNode, currNode);
+//    ListNode nextNode = curr.next;
+//    curr.next = prev;
+//    return reverseListTailRecursive(nextNode, curr);
 //  }
 
 //  /**
@@ -54,14 +54,14 @@ public class Problem206 {
 //   * Space Complexity: O(1) <br>
 //   */
 //  public static ListNode reverseList(ListNode head) {
-//    ListNode currNode = head;
-//    ListNode prevNode = null;
-//    while (currNode != null) {
-//      ListNode nextNode = currNode.next;
-//      currNode.next = prevNode;
-//      prevNode = currNode;
-//      currNode = nextNode;
+//    ListNode curr = head;
+//    ListNode prev = null;
+//    while (curr != null) {
+//      ListNode nextNode = curr.next;
+//      curr.next = prev;
+//      prev = curr;
+//      curr = nextNode;
 //    }
-//    return prevNode;
+//    return prev;
 //  }
 }
