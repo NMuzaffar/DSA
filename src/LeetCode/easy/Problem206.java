@@ -15,20 +15,20 @@ public class Problem206 {
     assertEquals(ListNode.fromArray(new int[] {}), reverseList(ListNode.fromArray(new int[] {})));
   }
 
-//  /**
-//   * Approach: Reverse Linked List (Classic Recursion) <br>
-//   * Time Complexity: O(n) <br>
-//   * Space Complexity: O(n) <br>
-//   */
-//  public static ListNode reverseList(ListNode head) {
-//    if (head == null || head.next == null) {
-//      return head;
-//    }
-//    ListNode newHead = reverseList(head.next);
-//    head.next.next = head;
-//    head.next = null;
-//    return newHead;
-//  }
+  /**
+   * Approach: Reverse Linked List (Classic Recursion) <br>
+   * Time Complexity: O(n) <br>
+   * Space Complexity: O(n) <br>
+   */
+  public static ListNode reverseList(ListNode head) {
+    if (head == null || head.next == null) {
+      return head;
+    }
+    ListNode newHead = reverseList(head.next);
+    head.next.next = head;
+    head.next = null;
+    return newHead;
+  }
 
 //  /**
 //   * Approach: Reverse Linked List (Tail Recursion) <br>
