@@ -17,7 +17,7 @@ public class Problem141 {
   }
 
   /**
-   * Approach: Fast & Slow Pointers <br>
+   * Approach: Floyd's Cycle Detection (Fast & Slow Pointers) <br>
    * Time Complexity: O(n) <br>
    * Space Complexity: O(1) <br>
    */
