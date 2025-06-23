@@ -10,13 +10,8 @@ import LeetCode.common.ListNode;
 public class Problem328 {
 
   public static void main(String[] args) {
-    assertEquals(
-        ListNode.fromArray(new int[] {1,3,5,2,4}),
-        oddEvenList(ListNode.fromArray(new int[] {1,2,3,4,5})));
-
-    assertEquals(
-        ListNode.fromArray(new int[] {2,3,6,7,1,5,4}),
-        oddEvenList(ListNode.fromArray(new int[] {2,1,3,5,6,4,7})));
+    assertEquals(ListNode.fromArray(new int[] {1,3,5,2,4}), oddEvenList(ListNode.fromArray(new int[] {1,2,3,4,5})));
+    assertEquals(ListNode.fromArray(new int[] {2,3,6,7,1,5,4}), oddEvenList(ListNode.fromArray(new int[] {2,1,3,5,6,4,7})));
   }
 
   /**
