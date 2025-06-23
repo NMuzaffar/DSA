@@ -10,17 +10,9 @@ import LeetCode.common.ListNode;
 public class Problem19 {
 
   public static void main(String[] args) {
-    assertEquals(
-        ListNode.fromArray(new int[] {1,2,3,5}),
-        removeNthFromEnd(ListNode.fromArray(new int[] {1,2,3,4,5}), 2));
-
-    assertEquals(
-        ListNode.fromArray(new int[] {}),
-        removeNthFromEnd(ListNode.fromArray(new int[] {1}), 1));
-
-    assertEquals(
-        ListNode.fromArray(new int[] {1}),
-        removeNthFromEnd(ListNode.fromArray(new int[] {1,2}), 1));
+    assertEquals(ListNode.fromArray(new int[] {1,2,3,5}), removeNthFromEnd(ListNode.fromArray(new int[] {1,2,3,4,5}), 2));
+    assertEquals(ListNode.fromArray(new int[] {}), removeNthFromEnd(ListNode.fromArray(new int[] {1}), 1));
+    assertEquals(ListNode.fromArray(new int[] {1}), removeNthFromEnd(ListNode.fromArray(new int[] {1,2}), 1));
   }
 
   /**
