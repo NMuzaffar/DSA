@@ -1,20 +1,38 @@
-//package LeetCode.easy;
-//
-//import static org.junit.jupiter.api.Assertions.*;
-//
-//import java.util.ArrayDeque;
-//import java.util.Deque;
-//
-///**
-// * <a href="https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string/">1047. Remove All Adjacent Duplicates In String</a>
-// */
-//public class Problem1047 {
-//
-//  public static void main(String[] args) {
-//    assertEquals("ca", removeDuplicates("abbaca"));
-//    assertEquals("ay", removeDuplicates("azxxzy"));
-//  }
-//
+package LeetCode.easy;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import java.util.ArrayDeque;
+import java.util.Deque;
+
+/**
+ * <a href="https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string/">1047. Remove All Adjacent Duplicates In String</a>
+ */
+public class Problem1047 {
+
+  public static void main(String[] args) {
+    assertEquals("ca", removeDuplicates("abbaca"));
+    assertEquals("ay", removeDuplicates("azxxzy"));
+  }
+
+  /**
+   * Approach: Stack (StringBuilder) <br>
+   * Time Complexity: O(n) <br>
+   * Space Complexity: O(n) <br>
+   */
+  public static String removeDuplicates(String s) {
+    StringBuilder charStack = new StringBuilder();
+    for (char c : s.toCharArray()) {
+      int lastIndex = charStack.length() - 1;
+      if (!charStack.isEmpty() && charStack.charAt(lastIndex) == c) {
+        charStack.deleteCharAt(lastIndex);
+      } else {
+        charStack.append(c);
+      }
+    }
+    return charStack.toString();
+  }
+
 //  /**
 //   * Approach: Stack <br>
 //   * Time Complexity: O(n) <br>
@@ -36,21 +54,4 @@
 //    }
 //    return sb.toString();
 //  }
-//
-////  /**
-////   * Approach: Stack (StringBuilder) <br>
-////   * Time Complexity: O(n) <br>
-////   * Space Complexity: O(n) <br>
-////   */
-////  public static String removeDuplicates(String s) {
-////    StringBuilder charStack = new StringBuilder();
-////    for (char c : s.toCharArray()) {
-////      if (!charStack.isEmpty() && charStack.charAt(charStack.length() - 1) == c) {
-////        charStack.deleteCharAt(charStack.length() - 1);
-////      } else {
-////        charStack.append(c);
-////      }
-////    }
-////    return charStack.toString();
-////  }
-//}
+}
