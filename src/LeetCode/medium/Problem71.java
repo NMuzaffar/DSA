@@ -25,10 +25,10 @@ public class Problem71 {
    * Space Complexity: O(n) <br>
    */
   public static String simplifyPath(String path) {
-    String[] pathSegments = path.split("/");
     Deque<String> stack = new ArrayDeque<>();
-    for (String directory : pathSegments) {
-      if (directory.isEmpty() || directory.equals(".")) {
+    String[] components = path.split("/");
+    for (String directory : components) {
+      if (directory.equals(".") || directory.isEmpty()) {
         continue;
       } else if (directory.equals("..")) {
         if (!stack.isEmpty()) {
@@ -40,8 +40,7 @@ public class Problem71 {
     }
     StringBuilder sb = new StringBuilder();
     while (!stack.isEmpty()) {
-      sb.append("/");
-      sb.append(stack.removeLast());
+      sb.append("/").append(stack.removeLast());
     }
     return sb.isEmpty() ? "/" : sb.toString();
   }
