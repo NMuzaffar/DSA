@@ -23,24 +23,24 @@ public class Problem933 {
     assertEquals(3, recentCounter.ping(3002));
   }
 
-  /**
-   * Approach: Queue <br>
-   * Time Complexity: O(n) <br>
-   * Space Complexity: O(n) <br>
-   */
   static class RecentCounter {
-    Queue<Integer> queue;
+    private final Queue<Integer> timeWindow;
 
     public RecentCounter() {
-      queue = new LinkedList<>();
+      timeWindow = new LinkedList<>();
     }
 
+    /**
+     * Approach: Queue <br>
+     * Time Complexity: O(1) <-> Worst case O(3000) <br>
+     * Space Complexity: O(1) <-> Worst case O(3000) <br>
+     */
     public int ping(int t) {
-      queue.offer(t);
-      while (!queue.isEmpty() && queue.peek() < t - 3000) {
-        queue.poll();
+      while (!timeWindow.isEmpty() && timeWindow.peek() < t - 3000) {
+        timeWindow.poll();
       }
-      return queue.size();
+      timeWindow.offer(t);
+      return timeWindow.size();
     }
   }
 }
