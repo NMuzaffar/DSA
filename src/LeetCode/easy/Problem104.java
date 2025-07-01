@@ -3,7 +3,6 @@ package LeetCode.easy;
 import static org.junit.jupiter.api.Assertions.*;
 
 import LeetCode.common.TreeNode;
-import LeetCode.common.TreeNode.Pair;
 import java.util.ArrayDeque;
 import java.util.Deque;
 
@@ -56,5 +55,14 @@ public class Problem104 {
 //      }
 //    }
 //    return answer;
+//  }
+//
+//  static class Pair {
+//    TreeNode node;
+//    int depth;
+//    Pair(TreeNode node, int depth) {
+//      this.node = node;
+//      this.depth = depth;
+//    }
 //  }
 }
