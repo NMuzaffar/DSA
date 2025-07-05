@@ -21,16 +21,16 @@ public class ReverseSomeChars {
    * Space Complexity: O(n + m) <br>
    */
   public static String reverseSomeChars(String str, List<Character> chars) {
-    Set<Character> canBeReversedChars = new HashSet<>(chars);
+    Set<Character> charSet = new HashSet<>(chars);
     Deque<Character> reversedStrChars = new ArrayDeque<>();
     for (char c : str.toCharArray()) {
-      if (canBeReversedChars.contains(c)) {
+      if (charSet.contains(c)) {
         reversedStrChars.push(c);
       }
     }
-    StringBuilder sb = new StringBuilder();
+    StringBuilder sb = new StringBuilder(str.length());
     for (char c : str.toCharArray()) {
-      if (canBeReversedChars.contains(c)) {
+      if (charSet.contains(c)) {
         sb.append(reversedStrChars.pop());
       } else {
         sb.append(c);
