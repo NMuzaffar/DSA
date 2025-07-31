@@ -39,7 +39,7 @@ public class Problem938 {
   }
 
 //  /**
-//   * Approach: In-order DFS (Iterative) <br>
+//   * Approach: Pre-order DFS (Iterative) <br>
 //   * Time Complexity: O(n) <br>
 //   * Space Complexity: O(n) <br>
 //   */
@@ -49,11 +49,11 @@ public class Problem938 {
 //    stack.push(root);
 //    while (!stack.isEmpty()) {
 //      TreeNode node = stack.pop();
-//      if (node.left != null && low < node.val) {
-//        stack.push(node.left);
-//      }
 //      if (low <= node.val && node.val <= high) {
 //        sum += node.val;
+//      }
+//      if (node.left != null && low < node.val) {
+//        stack.push(node.left);
 //      }
 //      if (node.right != null && node.val < high) {
 //        stack.push(node.right);
