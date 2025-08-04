@@ -34,7 +34,7 @@ public class HasPath {
   }
 
   /**
-   * Approach: Graph DFS (Recursive)
+   * Approach: Graph DFS (Recursive) <br>
    * Time Complexity: O(n^2), or O(e) <-> e = # of edges <br>
    * Space Complexity: O(n) <br>
    */
@@ -51,7 +51,7 @@ public class HasPath {
   }
 
 //  /**
-//   * Approach: Graph BFS
+//   * Approach: Graph BFS <br>
 //   * Time Complexity: O(n^2), or O(e) <-> e = # of edges <br>
 //   * Space Complexity: O(n) <br>
 //   */
