@@ -19,44 +19,18 @@ public class HasPath {
         "k", List.of()
     );
     assertTrue(hasPath(graph0, "f", "k"));
+    assertFalse(hasPath(graph0, "f", "j"));
+    assertTrue(hasPath(graph0, "i", "h"));
 
     final Map<String, List<String>> graph1 = Map.of(
-        "f", List.of("g", "i"),
-        "g", List.of("h"),
-        "h", List.of(),
-        "i", List.of("g", "k"),
-        "j", List.of("i"),
-        "k", List.of()
-    );
-    assertFalse(hasPath(graph1, "f", "j"));
-
-    final Map<String, List<String>> graph2 = Map.of(
-        "f", List.of("g", "i"),
-        "g", List.of("h"),
-        "h", List.of(),
-        "i", List.of("g", "k"),
-        "j", List.of("i"),
-        "k", List.of()
-    );
-    assertTrue(hasPath(graph2, "i", "h"));
-
-    final Map<String, List<String>> graph3 = Map.of(
         "v", List.of("x", "w"),
         "w", List.of(),
         "x", List.of(),
         "y", List.of("z"),
         "z", List.of()
     );
-    assertTrue(hasPath(graph3, "v", "w"));
-
-    final Map<String, List<String>> graph4 = Map.of(
-        "v", List.of("x", "w"),
-        "w", List.of(),
-        "x", List.of(),
-        "y", List.of("z"),
-        "z", List.of()
-    );
-    assertFalse(hasPath(graph4, "v", "z"));
+    assertTrue(hasPath(graph1, "v", "w"));
+    assertFalse(hasPath(graph1, "v", "z"));
   }
 
   /**
