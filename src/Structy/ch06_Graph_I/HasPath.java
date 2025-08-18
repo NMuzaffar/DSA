@@ -35,7 +35,7 @@ public class HasPath {
 
   /**
    * Approach: Graph DFS (Recursive) <br>
-   * Time Complexity: O(n^2), or O(e) <-> e = # of edges <br>
+   * Time Complexity: O(e) <-> e = # of edges <br>
    * Space Complexity: O(n) <br>
    */
   public static boolean hasPath(Map<String, List<String>> graph, String src, String dst) {
@@ -52,7 +52,7 @@ public class HasPath {
 
 //  /**
 //   * Approach: Graph BFS <br>
-//   * Time Complexity: O(n^2), or O(e) <-> e = # of edges <br>
+//   * Time Complexity: O(e) <-> e = # of edges <br>
 //   * Space Complexity: O(n) <br>
 //   */
 //  public static boolean hasPath(Map<String, List<String>> graph, String src, String dst) {
