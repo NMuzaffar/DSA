@@ -56,7 +56,7 @@ public class ConnectedComponentsCount {
 
   /**
    * Approach: Graph DFS (Recursive) <br>
-   * Time Complexity: O(n^2) <br>
+   * Time Complexity: O(e) <-> e = # of edges <br>
    * Space Complexity: O(n) <br>
    */
   public static int connectedComponentsCount(Map<Integer, List<Integer>> graph) {
@@ -82,7 +82,7 @@ public class ConnectedComponentsCount {
 
 //  /**
 //   * Approach: Graph DFS (Iterative) <br>
-//   * Time Complexity: O(n^2) <br>
+//   * Time Complexity: O(e) <-> e = # of edges <br>
 //   * Space Complexity: O(n) <br>
 //   */
 //  public static int connectedComponentsCount(Map<Integer, List<Integer>> graph) {
