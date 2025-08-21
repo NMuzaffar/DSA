@@ -47,19 +47,19 @@ public class MinimumIsland {
    * Space Complexity: O(m * n) <br>
    */
   public static int minimumIsland(List<List<String>> grid) {
-    int smallest = Integer.MAX_VALUE;
+    int minSize = Integer.MAX_VALUE;
     int rowLen = grid.size();
     int colLen = grid.get(0).size();
     boolean[][] visited = new boolean[rowLen][colLen];
     for (int row = 0; row < rowLen; row++) {
       for (int col = 0; col < colLen; col++) {
-        if (!visited[row][col] && grid.get(row).get(col).equals("L")) {
-          visited[row][col] = true;
-          smallest = Math.min(smallest, exploreIslandSize(row, col, grid, visited));
+        int size = exploreIslandSize(row, col, grid, visited);
+        if (size != 0) {
+          minSize = Math.min(minSize, size);
         }
       }
     }
-    return smallest;
+    return minSize;
   }
 
   private static final int[][] DIRECTIONS = new int[][] {
@@ -70,19 +70,23 @@ public class MinimumIsland {
   };
 
   private static int exploreIslandSize(int row, int col, List<List<String>> grid, boolean[][] visited) {
-    int size = 1;
+    if (!isValidPos(row, col, grid)) {
+      return 0;
+    }
+    if (visited[row][col]) {
+      return 0;
+    }
+    visited[row][col] = true;
+    int totalSize = 1;
     for (int[] direction : DIRECTIONS) {
       int nextRow = row + direction[0];
       int nextCol = col + direction[1];
-      if (isValidPos(grid, nextRow, nextCol) && !visited[nextRow][nextCol]) {
-        visited[nextRow][nextCol] = true;
-        size += exploreIslandSize(nextRow, nextCol, grid, visited);
-      }
+      totalSize += exploreIslandSize(nextRow, nextCol, grid, visited);
     }
-    return size;
+    return totalSize;
   }
 
-  private static boolean isValidPos(List<List<String>> grid, int row, int col) {
+  private static boolean isValidPos(int row, int col, List<List<String>> grid) {
     return 0 <= row && row < grid.size()
         && 0 <= col && col < grid.get(0).size()
         && grid.get(row).get(col).equals("L");
