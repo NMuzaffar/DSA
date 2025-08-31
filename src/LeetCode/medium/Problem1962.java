@@ -23,7 +23,7 @@ public class Problem1962 {
    */
   public static int minStoneSum(int[] piles, int k) {
     int total = 0;
-    PriorityQueue<Integer> maxHeap = new PriorityQueue<>(Comparator.reverseOrder());
+    PriorityQueue<Integer> maxHeap = new PriorityQueue<>((a, b) -> Integer.compare(b, a));
     for (int num : piles) {
       maxHeap.add(num);
       total += num;
@@ -31,7 +31,7 @@ public class Problem1962 {
     for (int i = 0; i < k; i++) {
       int curr = maxHeap.remove();
       int remove = curr / 2;
-      maxHeap.offer(curr - remove);
+      maxHeap.add(curr - remove);
       total -= curr / 2;
     }
     return total;
