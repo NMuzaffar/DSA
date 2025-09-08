@@ -2,8 +2,6 @@ package Structy.ch03_Linked_List_I;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-import Structy.common.ListNode;
-
 /**
  * <a href="https://structy.net/problems/premium/insert-node">Insert Node</a>
  */
@@ -11,20 +9,20 @@ public class InsertNode {
 
   public static void main(String[] args) {
     assertEquals(
-        ListNode.fromArray(new String[] {"a", "b", "x", "c", "d"}),
-        insertNode(ListNode.fromArray(new String[] {"a", "b", "c", "d"}), "x", 2));
+        Node.fromArray(new String[] {"a", "b", "x", "c", "d"}),
+        insertNode(Node.fromArray(new String[] {"a", "b", "c", "d"}), "x", 2));
 
     assertEquals(
-        ListNode.fromArray(new String[] {"a", "b", "c", "v", "d"}),
-        insertNode(ListNode.fromArray(new String[] {"a", "b", "c", "d"}), "v", 3));
+        Node.fromArray(new String[] {"a", "b", "c", "v", "d"}),
+        insertNode(Node.fromArray(new String[] {"a", "b", "c", "d"}), "v", 3));
 
     assertEquals(
-        ListNode.fromArray(new String[] {"a", "b", "c", "d", "m"}),
-        insertNode(ListNode.fromArray(new String[] {"a", "b", "c", "d"}), "m", 4));
+        Node.fromArray(new String[] {"a", "b", "c", "d", "m"}),
+        insertNode(Node.fromArray(new String[] {"a", "b", "c", "d"}), "m", 4));
 
     assertEquals(
-        ListNode.fromArray(new String[] {"z", "a", "b"}),
-        insertNode(ListNode.fromArray(new String[] {"a", "b"}), "z", 0));
+        Node.fromArray(new String[] {"z", "a", "b"}),
+        insertNode(Node.fromArray(new String[] {"a", "b"}), "z", 0));
   }
 
   /**
@@ -32,9 +30,9 @@ public class InsertNode {
    * Time Complexity: O(n) <br>
    * Space Complexity: O(n) <br>
    */
-  public static <T> ListNode<T> insertNode(ListNode<T> head, T value, int index) {
+  public static <T> Node<T> insertNode(Node<T> head, T value, int index) {
     if (index == 0) {
-      ListNode<T> newNode = new ListNode<>(value);
+      Node<T> newNode = new Node<>(value);
       newNode.next = head;
       return newNode;
     }

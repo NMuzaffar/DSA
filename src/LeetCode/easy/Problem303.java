@@ -7,11 +7,6 @@
 // */
 //public class Problem303 {
 //
-//    /**
-//     * Your NumArray object will be instantiated and called as such:
-//     * NumArray obj = new NumArray(nums);
-//     * int param_1 = obj.sumRange(left,right);
-//     */
 //  public static void main(String[] args) {
 //    NumArray numArray = new NumArray(new int[] {-2,0,3,-5,2,-1});
 //    assertEquals(1, numArray.sumRange(0, 2)); // return (-2) + 0 + 3 = 1
@@ -20,11 +15,11 @@
 //  }
 //
 //  /**
-//   * Approach: Prefix Sum <br>
-//   * Time Complexity: NumArray() -> O(N). sumRange() -> O(1) <br>
-//   * Space Complexity: O(n) <br>
+//   * Your NumArray object will be instantiated and called as such:
+//   * NumArray obj = new NumArray(nums);
+//   * int param_1 = obj.sumRange(left,right);
 //   */
-//  static class NumArray {
+//  class NumArray {
 //    private final int[] prefix;
 //
 //    public NumArray(int[] nums) {
@@ -35,6 +30,11 @@
 //      }
 //    }
 //
+//    /**
+//     * Approach: Prefix Sum <br>
+//     * Time Complexity: NumArray() -> O(N). sumRange() -> O(1) <br>
+//     * Space Complexity: O(n) <br>
+//     */
 //    public int sumRange(int left, int right) {
 //      return prefix[right + 1] - prefix[left];
 //    }

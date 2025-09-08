@@ -1,8 +1,8 @@
 //package LeetCode.medium;
 //
-//import java.util.Arrays;
-//
 //import static org.junit.jupiter.api.Assertions.*;
+//
+//import java.util.Arrays;
 //
 ///**
 // * <a href="https://leetcode.com/problems/k-radius-subarray-averages/">2090. K Radius Subarray Averages</a>

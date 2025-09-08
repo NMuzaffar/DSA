@@ -36,46 +36,46 @@
 //    }
 //  }
 //
-////  /**
-////   * Approach: Two Pointers (Space Optimal, Operation Sub-Optimal) <br>
-////   * Time Complexity: O(n) <br>
-////   * Space Complexity: O(1) <br>
-////   */
-////  public static void moveZeroes(int[] nums) {
-////    int n = nums.length;
-////
-////    int lastNonZeroIndex = 0;
-////    for (int i = 0; i < n; i++) {
-////      if (nums[i] != 0) {
-////        nums[lastNonZeroIndex++] = nums[i];
-////      }
-////    }
-////
-////    for (; lastNonZeroIndex < n; lastNonZeroIndex++) {
-////      nums[lastNonZeroIndex] = 0;
-////    }
-////  }
-////
-////  /**
-////   * Approach: Two Pointers (Space Sub-Optimal) <br>
-////   * Time Complexity: O(n) <br>
-////   * Space Complexity: O(n) <br>
-////   */
-////  public static void moveZeroes(int[] nums) {
-////    int n = nums.length;
-////
-////    int lastNonZeroIndex = 0;
-////    int[] tempAnswer = new int[n];
-////    for (int num : nums) {
-////      if (num != 0) {
-////        tempAnswer[lastNonZeroIndex++] = num;
-////      }
-////    }
-////
-////    for (; lastNonZeroIndex < n; lastNonZeroIndex++) {
-////      tempAnswer[lastNonZeroIndex] = 0;
-////    }
-////
-////    System.arraycopy(tempAnswer, 0, nums, 0, n);
-////  }
+//  /**
+//   * Approach: Two Pointers (Space Optimal, Operation Sub-Optimal) <br>
+//   * Time Complexity: O(n) <br>
+//   * Space Complexity: O(1) <br>
+//   */
+//  public static void moveZeroes(int[] nums) {
+//    int n = nums.length;
+//
+//    int lastNonZeroIndex = 0;
+//    for (int i = 0; i < n; i++) {
+//      if (nums[i] != 0) {
+//        nums[lastNonZeroIndex++] = nums[i];
+//      }
+//    }
+//
+//    for (; lastNonZeroIndex < n; lastNonZeroIndex++) {
+//      nums[lastNonZeroIndex] = 0;
+//    }
+//  }
+//
+//  /**
+//   * Approach: Two Pointers (Space Sub-Optimal) <br>
+//   * Time Complexity: O(n) <br>
+//   * Space Complexity: O(n) <br>
+//   */
+//  public static void moveZeroes(int[] nums) {
+//    int n = nums.length;
+//
+//    int lastNonZeroIndex = 0;
+//    int[] tempAnswer = new int[n];
+//    for (int num : nums) {
+//      if (num != 0) {
+//        tempAnswer[lastNonZeroIndex++] = num;
+//      }
+//    }
+//
+//    for (; lastNonZeroIndex < n; lastNonZeroIndex++) {
+//      tempAnswer[lastNonZeroIndex] = 0;
+//    }
+//
+//    System.arraycopy(tempAnswer, 0, nums, 0, n);
+//  }
 //}

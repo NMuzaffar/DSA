@@ -2,20 +2,18 @@ package Structy.ch03_Linked_List_I;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-import Structy.common.ListNode;
-
 /**
  * <a href="https://structy.net/problems/linked-list-find">Linked List Find</a>
  */
 public class LinkedListFind {
 
   public static void main(String[] args) {
-    assertEquals(true, linkedListFind(ListNode.fromArray(new String[] {"a", "b", "c", "d"}), "c"));
-    assertEquals(true, linkedListFind(ListNode.fromArray(new String[] {"a", "b", "c", "d"}), "d"));
-    assertEquals(false, linkedListFind(ListNode.fromArray(new String[] {"a", "b", "c", "d"}), "q"));
-    assertEquals(true, linkedListFind(ListNode.fromArray(new String[] {"jason", "leneli"}), "jason"));
-    assertEquals(true, linkedListFind(ListNode.fromArray(new Integer[] {42}), 42));
-    assertEquals(false, linkedListFind(ListNode.fromArray(new Integer[] {42}), 100));
+    assertEquals(true, linkedListFind(Node.fromArray(new String[] {"a", "b", "c", "d"}), "c"));
+    assertEquals(true, linkedListFind(Node.fromArray(new String[] {"a", "b", "c", "d"}), "d"));
+    assertEquals(false, linkedListFind(Node.fromArray(new String[] {"a", "b", "c", "d"}), "q"));
+    assertEquals(true, linkedListFind(Node.fromArray(new String[] {"jason", "leneli"}), "jason"));
+    assertEquals(true, linkedListFind(Node.fromArray(new Integer[] {42}), 42));
+    assertEquals(false, linkedListFind(Node.fromArray(new Integer[] {42}), 100));
   }
 
   /**
@@ -23,7 +21,7 @@ public class LinkedListFind {
    * Time Complexity: O(n) <br>
    * Space Complexity: O(n) <br>
    */
-  public static <T> boolean linkedListFind(ListNode<T> head, T target) {
+  public static <T> boolean linkedListFind(Node<T> head, T target) {
     if (head == null) {
       return false;
     }

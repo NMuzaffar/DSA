@@ -2,19 +2,17 @@ package Structy.ch03_Linked_List_I;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-import Structy.common.ListNode;
-
 /**
  * <a href="https://structy.net/problems/get-node-value">Get Node Value</a>
  */
 public class GetNodeValue {
 
   public static void main(String[] args) {
-    assertEquals("c", getNodeValue(ListNode.fromArray(new String[] {"a", "b", "c", "d"}), 2));
-    assertEquals("d", getNodeValue(ListNode.fromArray(new String[] {"a", "b", "c", "d"}), 3));
-    assertEquals(null, getNodeValue(ListNode.fromArray(new String[] {"a", "b", "c", "d"}), 7));
-    assertEquals("banana", getNodeValue(ListNode.fromArray(new String[] {"banana", "mango"}), 0));
-    assertEquals("mango", getNodeValue(ListNode.fromArray(new String[] {"banana", "mango"}), 1));
+    assertEquals("c", getNodeValue(Node.fromArray(new String[] {"a", "b", "c", "d"}), 2));
+    assertEquals("d", getNodeValue(Node.fromArray(new String[] {"a", "b", "c", "d"}), 3));
+    assertEquals(null, getNodeValue(Node.fromArray(new String[] {"a", "b", "c", "d"}), 7));
+    assertEquals("banana", getNodeValue(Node.fromArray(new String[] {"banana", "mango"}), 0));
+    assertEquals("mango", getNodeValue(Node.fromArray(new String[] {"banana", "mango"}), 1));
   }
 
   /**
@@ -22,7 +20,7 @@ public class GetNodeValue {
    * Time Complexity: O(n) <br>
    * Space Complexity: O(n) <br>
    */
-  public static <T> T getNodeValue(ListNode<T> head, int index) {
+  public static <T> T getNodeValue(Node<T> head, int index) {
     if (head == null) {
       return null;
     }

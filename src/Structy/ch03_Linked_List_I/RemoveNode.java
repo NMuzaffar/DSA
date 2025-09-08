@@ -2,8 +2,6 @@ package Structy.ch03_Linked_List_I;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-import Structy.common.ListNode;
-
 /**
  * <a href="https://structy.net/problems/premium/remove-node">Remove Node</a>
  */
@@ -13,24 +11,24 @@ public class RemoveNode {
     assertEquals(null, removeNode(null, "a"));
 
     assertEquals(
-        ListNode.fromArray(new String[] {"a", "b", "d", "e", "f"}),
-        removeNode(ListNode.fromArray(new String[] {"a", "b", "c", "d", "e", "f"}), "c"));
+        Node.fromArray(new String[] {"a", "b", "d", "e", "f"}),
+        removeNode(Node.fromArray(new String[] {"a", "b", "c", "d", "e", "f"}), "c"));
 
     assertEquals(
-        ListNode.fromArray(new String[] {"x", "y"}),
-        removeNode(ListNode.fromArray(new String[] {"x", "y", "z"}), "z"));
+        Node.fromArray(new String[] {"x", "y"}),
+        removeNode(Node.fromArray(new String[] {"x", "y", "z"}), "z"));
 
     assertEquals(
-        ListNode.fromArray(new String[] {"r", "s"}),
-        removeNode(ListNode.fromArray(new String[] {"q", "r", "s"}), "q"));
+        Node.fromArray(new String[] {"r", "s"}),
+        removeNode(Node.fromArray(new String[] {"q", "r", "s"}), "q"));
 
     assertEquals(
-        ListNode.fromArray(new String[] {"h", "j", "i"}),
-        removeNode(ListNode.fromArray(new String[] {"h", "i", "j", "i"}), "i"));
+        Node.fromArray(new String[] {"h", "j", "i"}),
+        removeNode(Node.fromArray(new String[] {"h", "i", "j", "i"}), "i"));
 
     assertEquals(
         null,
-        removeNode(ListNode.fromArray(new String[] {"t"}), "t"));
+        removeNode(Node.fromArray(new String[] {"t"}), "t"));
   }
 
   /**
@@ -38,7 +36,7 @@ public class RemoveNode {
    * Time Complexity: O(n) <br>
    * Space Complexity: O(n) <br>
    */
-  public static <T> ListNode<T> removeNode(ListNode<T> head, T targetVal) {
+  public static <T> Node<T> removeNode(Node<T> head, T targetVal) {
     if (head == null) {
       return null;
     }

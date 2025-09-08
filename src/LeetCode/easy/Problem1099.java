@@ -1,8 +1,8 @@
 //package LeetCode.easy;
 //
-//import java.util.Arrays;
-//
 //import static org.junit.jupiter.api.Assertions.*;
+//
+//import java.util.Arrays;
 //
 ///**
 // * <a href="https://leetcode.com/problems/two-sum-less-than-k/">1099. Two Sum Less Than K</a>
@@ -16,8 +16,8 @@
 //
 //  /**
 //   * Approach: Two Pointers <br>
-//   * Time Complexity: O(n log(n)) <br>
-//   * Space Complexity: O(log n) <-> Quicksort Algorithm in Java <br>
+//   * Time Complexity: O(n * log(n)) <br>
+//   * Space Complexity: O(log(n)) <-> Quicksort Algorithm in Java <br>
 //   */
 //  public static int twoSumLessThanK(int[] nums, int k) {
 //    Arrays.sort(nums);

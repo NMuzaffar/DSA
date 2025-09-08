@@ -37,7 +37,7 @@
 //
 ////  /**
 ////   * Approach: Sorted Map <br>
-////   * Time Complexity: O(n log(n)) <br>
+////   * Time Complexity: O(n * log(n)) <br>
 ////   * Space Complexity: O(n) <br>
 ////   */
 ////  public static int largestUniqueNumber(int[] nums) {
@@ -46,7 +46,7 @@
 ////      numsFrequencies.put(num, numsFrequencies.getOrDefault(num, 0) + 1); // Insertion log(k) (Worst case log(n))
 ////    }
 ////    int largestUnique = -1;
-////    for (int num : numsFrequencies.descendingKeySet()) { // O(n log(n))
+////    for (int num : numsFrequencies.descendingKeySet()) { // O(n * log(n))
 ////      if (numsFrequencies.get(num) == 1) {
 ////        largestUnique = num;
 ////        break;

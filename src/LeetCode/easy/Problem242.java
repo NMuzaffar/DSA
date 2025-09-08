@@ -62,7 +62,7 @@
 ////
 ////  /**
 ////   * Approach: Sorting <br>
-////   * Time Complexity: O(n log(n)) <br>
+////   * Time Complexity: O(n * log(n)) <br>
 ////   * Space Complexity: O(n) <br>
 ////   */
 ////  public static boolean isAnagram(String s, String t) {
