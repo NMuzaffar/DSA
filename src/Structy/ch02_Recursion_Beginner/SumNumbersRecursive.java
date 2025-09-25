@@ -1,8 +1,8 @@
 package Structy.ch02_Recursion_Beginner;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
-import java.util.*;
+import java.util.List;
 
 /**
  * <a href="https://structy.net/problems/sum-numbers-recursive">Sum Numbers Recursive</a>

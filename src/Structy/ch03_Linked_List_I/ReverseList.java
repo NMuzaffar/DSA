@@ -1,6 +1,6 @@
 package Structy.ch03_Linked_List_I;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 /**
  * <a href="https://structy.net/problems/reverse-list">Reverse List</a>

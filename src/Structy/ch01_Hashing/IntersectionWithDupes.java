@@ -1,8 +1,11 @@
 package Structy.ch01_Hashing;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 /**
  * <a href="https://structy.net/problems/premium/intersection-with-dupes">Intersection With Dupes</a>

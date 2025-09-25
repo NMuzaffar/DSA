@@ -1,8 +1,11 @@
 package Structy.ch01_Hashing;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
-import java.util.*;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
 
 /**
  * <a href="https://structy.net/problems/premium/all-unique">All Unique</a>

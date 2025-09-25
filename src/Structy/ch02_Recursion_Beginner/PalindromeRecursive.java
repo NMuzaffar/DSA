@@ -1,6 +1,7 @@
 package Structy.ch02_Recursion_Beginner;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 /**
  * <a href="https://structy.net/problems/premium/palindrome-recursive">Palindrome Recursive</a>

@@ -1,6 +1,7 @@
 package Structy.ch05_Two_Pointer;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 /**
  * <a href="https://structy.net/problems/premium/is-subsequence">Is Subsequence</a>

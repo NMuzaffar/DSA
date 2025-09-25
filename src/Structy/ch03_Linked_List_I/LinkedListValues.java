@@ -1,8 +1,9 @@
 package Structy.ch03_Linked_List_I;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * <a href="https://structy.net/problems/linked-list-values">Linked List Values</a>

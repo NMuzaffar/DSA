@@ -1,8 +1,8 @@
 package Structy.ch06_Graph_I;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
-import java.util.*;
+import java.util.List;
 
 /**
  * <a href="https://structy.net/problems/island-count">Island Count</a>

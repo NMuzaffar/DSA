@@ -1,6 +1,6 @@
 package Structy.ch08_Stack;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import java.util.*;
 

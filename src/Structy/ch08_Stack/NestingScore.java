@@ -1,7 +1,5 @@
 package Structy.ch08_Stack;
 
-import static org.junit.jupiter.api.Assertions.*;
-
 /**
  * <a href="https://structy.net/problems/premium/nesting-score">Nesting Score</a>
  */

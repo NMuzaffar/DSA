@@ -1,6 +1,6 @@
 package Structy.ch08_Stack;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 /**
  * <a href="https://structy.net/problems/premium/decompress-braces">Decompress Braces</a>

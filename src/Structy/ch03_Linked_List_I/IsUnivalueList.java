@@ -1,6 +1,7 @@
 package Structy.ch03_Linked_List_I;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 /**
  * <a href="https://structy.net/problems/premium/is-univalue-list">Is Univalue List</a>

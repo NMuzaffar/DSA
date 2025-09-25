@@ -1,6 +1,6 @@
 package Structy.ch02_Recursion_Beginner;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 /**
  * <a href="https://structy.net/problems/premium/factorial">Factorial</a>

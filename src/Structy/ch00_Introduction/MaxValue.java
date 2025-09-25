@@ -1,6 +1,6 @@
 package Structy.ch00_Introduction;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 /**
  * <a href="https://structy.net/problems/max-value">Max Value</a>
