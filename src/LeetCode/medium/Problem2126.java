@@ -15,7 +15,7 @@ public class Problem2126 {
   }
 
   /**
-   * Approach: Greedy <br>
+   * Approach: Sort + Greedy <br>
    * Time Complexity: O(n * log(n)) <br>
    * Space Complexity: O(log(n)) <br>
    */
