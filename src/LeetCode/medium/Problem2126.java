@@ -10,8 +10,8 @@ import java.util.*;
 public class Problem2126 {
 
   public static void main(String[] args) {
-      assertTrue(asteroidsDestroyed(10, new int[] {3,9,19,5,21}));
-      assertTrue(asteroidsDestroyed(5, new int[] {4,9,23,4}));
+    assertTrue(asteroidsDestroyed(10, new int[] {3, 9, 19, 5, 21}));
+    assertTrue(asteroidsDestroyed(5, new int[] {4, 9, 23, 4}));
   }
 
   /**
