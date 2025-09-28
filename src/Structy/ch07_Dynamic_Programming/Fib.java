@@ -7,7 +7,7 @@ import java.util.Map;
 
 /**
  * <a href="https://structy.net/problems/fib">Fib</a>
- * */
+ */
 public class Fib {
 
   public static void main(String[] args) {
